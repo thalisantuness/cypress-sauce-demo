@@ -1,0 +1,24 @@
+{
+  "name": "sauce-demo-tests",
+  "version": "0.1.0",
+  "private": true,
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "cypress:open": "cypress open",
+    "test": "cypress run",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\""
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.22.4",
+    "cucumber": "^6.0.7",
+    "cypress": "^12.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  }
+}
